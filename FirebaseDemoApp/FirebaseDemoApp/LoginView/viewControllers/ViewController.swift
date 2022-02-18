@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInButtonReleased(_ sender: UIButton) {
+        performSegue(withIdentifier: "toUserView", sender: self)
     }
     
     @IBAction func createUserButtonReleased(_ sender: UIButton) {
