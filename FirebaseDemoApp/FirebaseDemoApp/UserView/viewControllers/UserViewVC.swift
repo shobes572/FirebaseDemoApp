@@ -9,10 +9,11 @@ import UIKit
 
 class UserViewVC: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
     }
     
 }
