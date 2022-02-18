@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vMU-gi-kjQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -70,6 +70,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Sign In">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZN-hH-KaF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-p5-9yF">
                                         <rect key="frame" x="151.5" y="156.5" width="111.5" height="31"/>
@@ -77,6 +80,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Create User">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="createUserButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWu-jV-C05"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxy-Mr-h48">
                                         <rect key="frame" x="151.5" y="195.5" width="111.5" height="31"/>
@@ -84,6 +90,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Use As Guest">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="useAsGuestButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mm4-Iz-OUv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -104,10 +113,45 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4wH-fu-eel" secondAttribute="trailing" id="dah-rW-kUm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hd7-Wd-86t"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="Wgs-l9-rh0" id="3TT-KA-AgG"/>
+                        <outlet property="passwordInputField" destination="7m3-o9-RrY" id="ZwU-CV-I6T"/>
+                        <outlet property="usernameInputField" destination="IT7-i3-b3l" id="eLE-Wl-7cB"/>
+                        <segue destination="5mS-q3-Uig" kind="show" identifier="toUserView" id="ceI-fY-IbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+        </scene>
+        <!--UserViewSB-->
+        <scene sceneID="YbV-pC-WMo">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UserViewSB" storyboardName="UserViewSB" referencedIdentifier="UserViewSB" id="5mS-q3-Uig" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pB1-fd-Ho2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8w8-jh-tmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="-210"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="diw-bJ-9k0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vMU-gi-kjQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fjp-Cu-yIw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lcD-06-ewy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RS-8C-lIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
