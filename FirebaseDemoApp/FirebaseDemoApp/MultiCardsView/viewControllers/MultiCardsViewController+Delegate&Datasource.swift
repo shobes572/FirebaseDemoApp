@@ -18,7 +18,14 @@ extension MultiCardsViewController: UITableViewDataSource, UITableViewDelegate {
         let model = listData[indexPath.row]
         guard let heading = model.heading else { return UITableViewCell() }
         guard let description = model.description else { return UITableViewCell() }
-        
+        guard let isFav = model.isFavorite else { return UITableViewCell() }
+        cell.lblHeading.text = heading
+        cell.lblDescription.text = description
+        if isFav {
+            cell.imgIsFavorite.image = UIImage(systemName: "suit.heart.fill")
+        } else {
+            cell.imgIsFavorite.image = UIImage(systemName: "suit.heart")
+        }
         return cell
     }
 }

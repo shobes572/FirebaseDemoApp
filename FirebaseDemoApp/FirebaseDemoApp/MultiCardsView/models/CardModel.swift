@@ -10,4 +10,5 @@ import Foundation
 class CardModel: Codable {
     let heading: String?
     let description: String?
+    let isFavorite: Bool?
 }

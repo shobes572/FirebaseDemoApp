@@ -21,6 +21,8 @@
 		2F3205AD27C0150C0026DB6F /* SingleCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3205AB27C0150C0026DB6F /* SingleCardCell.xib */; };
 		2F3205AF27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205AE27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift */; };
 		2F3205B327C019440026DB6F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B227C019440026DB6F /* CardModel.swift */; };
+		2F3205B527C020EF0026DB6F /* MultiCardsViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B427C020EF0026DB6F /* MultiCardsViewController+Utilities.swift */; };
+		2F3205BA27C021D50026DB6F /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B927C021D50026DB6F /* SingleCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2F3205AB27C0150C0026DB6F /* SingleCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleCardCell.xib; sourceTree = "<group>"; };
 		2F3205AE27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiCardsViewController+Delegate&Datasource.swift"; sourceTree = "<group>"; };
 		2F3205B227C019440026DB6F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		2F3205B427C020EF0026DB6F /* MultiCardsViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiCardsViewController+Utilities.swift"; sourceTree = "<group>"; };
+		2F3205B927C021D50026DB6F /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		2F32057927BFEDC30026DB6F /* FirebaseDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F3205B627C021A50026DB6F /* SingleCardView */,
 				2F32059227BFEE600026DB6F /* supporting */,
 				2F32059127BFEE4F0026DB6F /* CreateView */,
 				2F32059027BFEE3E0026DB6F /* UserView */,
@@ -174,6 +179,7 @@
 				2F3205A327BFFFB90026DB6F /* cells */,
 				2F3205A827C014DF0026DB6F /* MultiCardsViewController.swift */,
 				2F3205AE27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift */,
+				2F3205B427C020EF0026DB6F /* MultiCardsViewController+Utilities.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -193,6 +199,30 @@
 				2F3205B227C019440026DB6F /* CardModel.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		2F3205B627C021A50026DB6F /* SingleCardView */ = {
+			isa = PBXGroup;
+			children = (
+				2F3205B827C021BF0026DB6F /* viewControllers */,
+				2F3205B727C021B80026DB6F /* views */,
+			);
+			path = SingleCardView;
+			sourceTree = "<group>";
+		};
+		2F3205B727C021B80026DB6F /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2F3205B827C021BF0026DB6F /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F3205B927C021D50026DB6F /* SingleCardViewController.swift */,
+			);
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +301,11 @@
 			files = (
 				2F3205A927C014DF0026DB6F /* MultiCardsViewController.swift in Sources */,
 				2F3205AC27C0150C0026DB6F /* SingleCardCell.swift in Sources */,
+				2F3205BA27C021D50026DB6F /* SingleCardViewController.swift in Sources */,
 				2F32059A27BFF5ED0026DB6F /* CreateViewController.swift in Sources */,
 				2F3205AF27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift in Sources */,
 				2F32057F27BFEDC30026DB6F /* ViewController.swift in Sources */,
+				2F3205B527C020EF0026DB6F /* MultiCardsViewController+Utilities.swift in Sources */,
 				2F3205B327C019440026DB6F /* CardModel.swift in Sources */,
 				2F32057B27BFEDC30026DB6F /* AppDelegate.swift in Sources */,
 				2F32057D27BFEDC30026DB6F /* SceneDelegate.swift in Sources */,

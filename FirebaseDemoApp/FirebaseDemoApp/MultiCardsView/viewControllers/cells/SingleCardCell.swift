@@ -9,5 +9,7 @@ import UIKit
 
 class SingleCardCell: UITableViewCell {
     static let identifier = String(describing: SingleCardCell.self)
-    
+    @IBOutlet weak var lblHeading: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var imgIsFavorite: UIImageView!
 }
