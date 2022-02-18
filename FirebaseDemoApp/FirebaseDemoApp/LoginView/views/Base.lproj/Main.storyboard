@@ -70,6 +70,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Sign In">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5PD-lr-amW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-p5-9yF">
                                         <rect key="frame" x="151.5" y="156.5" width="111.5" height="31"/>
@@ -77,6 +80,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Create User">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="createUserButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Is0-ab-ebX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxy-Mr-h48">
                                         <rect key="frame" x="151.5" y="195.5" width="111.5" height="31"/>
@@ -84,6 +90,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Use As Guest">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="useAsGuestButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KP-p1-Z2m"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -104,10 +113,26 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4wH-fu-eel" secondAttribute="trailing" id="dah-rW-kUm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="Wgs-l9-rh0" id="wAc-Mw-3sm"/>
+                        <outlet property="passwordInputTextField" destination="7m3-o9-RrY" id="XHr-pJ-RAM"/>
+                        <outlet property="usernameInputTextField" destination="IT7-i3-b3l" id="92B-VC-QpY"/>
+                        <segue destination="eC2-MV-b1Y" kind="show" id="DMp-DP-Ccv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="82"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Nw5-ZJ-dhi">
+            <objects>
+                <viewControllerPlaceholder id="eC2-MV-b1Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vzr-R5-UxT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qV-8f-COZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="-210"/>
         </scene>
     </scenes>
     <resources>

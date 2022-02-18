@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var usernameInputTextField: UITextField!
+    @IBOutlet weak var passwordInputTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signInButtonReleased(_ sender: UIButton) {
+    }
+    
+    @IBAction func createUserButtonReleased(_ sender: UIButton) {
+    }
+    
+    @IBAction func useAsGuestButtonReleased(_ sender: UIButton) {
+    }
 }
 
