@@ -15,6 +15,10 @@
 		2F32058727BFEDC40026DB6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F32058527BFEDC40026DB6F /* LaunchScreen.storyboard */; };
 		2F32059727BFF39B0026DB6F /* CreateView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F32059627BFF39B0026DB6F /* CreateView.storyboard */; };
 		2F32059A27BFF5ED0026DB6F /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32059927BFF5ED0026DB6F /* CreateViewController.swift */; };
+		2F32059E27BFFACE0026DB6F /* MultiCardsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F32059D27BFFACE0026DB6F /* MultiCardsView.storyboard */; };
+		2F3205A027BFFF190026DB6F /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32059F27BFFF190026DB6F /* CardCollectionViewController.swift */; };
+		2F3205A227BFFF7E0026DB6F /* CardCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205A127BFFF7E0026DB6F /* CardCollectionFlowLayout.swift */; };
+		2F3205A527BFFFD20026DB6F /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205A427BFFFD20026DB6F /* CardCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		2F32058827BFEDC40026DB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F32059627BFF39B0026DB6F /* CreateView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateView.storyboard; sourceTree = "<group>"; };
 		2F32059927BFF5ED0026DB6F /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		2F32059D27BFFACE0026DB6F /* MultiCardsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiCardsView.storyboard; sourceTree = "<group>"; };
+		2F32059F27BFFF190026DB6F /* CardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewController.swift; sourceTree = "<group>"; };
+		2F3205A127BFFF7E0026DB6F /* CardCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		2F3205A427BFFFD20026DB6F /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,8 @@
 		2F32058F27BFEE2C0026DB6F /* MultiCardsView */ = {
 			isa = PBXGroup;
 			children = (
+				2F32059C27BFFA550026DB6F /* viewControllers */,
+				2F32059B27BFFA4E0026DB6F /* views */,
 			);
 			path = MultiCardsView;
 			sourceTree = "<group>";
@@ -145,6 +155,32 @@
 			path = viewControllers;
 			sourceTree = "<group>";
 		};
+		2F32059B27BFFA4E0026DB6F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2F32059D27BFFACE0026DB6F /* MultiCardsView.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2F32059C27BFFA550026DB6F /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F3205A327BFFFB90026DB6F /* cells */,
+				2F32059F27BFFF190026DB6F /* CardCollectionViewController.swift */,
+				2F3205A127BFFF7E0026DB6F /* CardCollectionFlowLayout.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		2F3205A327BFFFB90026DB6F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F3205A427BFFFD20026DB6F /* CardCollectionCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +242,7 @@
 				2F32058727BFEDC40026DB6F /* LaunchScreen.storyboard in Resources */,
 				2F32058427BFEDC40026DB6F /* Assets.xcassets in Resources */,
 				2F32058227BFEDC30026DB6F /* Main.storyboard in Resources */,
+				2F32059E27BFFACE0026DB6F /* MultiCardsView.storyboard in Resources */,
 				2F32059727BFF39B0026DB6F /* CreateView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +256,11 @@
 			files = (
 				2F32059A27BFF5ED0026DB6F /* CreateViewController.swift in Sources */,
 				2F32057F27BFEDC30026DB6F /* ViewController.swift in Sources */,
+				2F3205A527BFFFD20026DB6F /* CardCollectionCell.swift in Sources */,
 				2F32057B27BFEDC30026DB6F /* AppDelegate.swift in Sources */,
+				2F3205A027BFFF190026DB6F /* CardCollectionViewController.swift in Sources */,
 				2F32057D27BFEDC30026DB6F /* SceneDelegate.swift in Sources */,
+				2F3205A227BFFF7E0026DB6F /* CardCollectionFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
