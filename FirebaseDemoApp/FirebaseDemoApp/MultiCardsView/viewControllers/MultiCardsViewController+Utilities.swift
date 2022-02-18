@@ -8,13 +8,13 @@
 import Foundation
 
 protocol ChangedIsFavorite {
-    func toggleIsFavorite()
+    func toggleIsFavorite(modelIndex: Int)
 }
 extension MultiCardsViewController: ChangedIsFavorite {
     func refreshTableView() { DispatchQueue.main.async { self.tableCardsView.reloadData() } }
-    func toggleIsFavorite() {
+    func toggleIsFavorite(modelIndex: Int) {
         self.dismiss(animated: true, completion: {
-//            self.listData[modelIndex] = AnimeViewModel.shared.toggleIsFavorite(model: self.listData[modelIndex])
+            self.listData[modelIndex] = MultiCardsViewModel.shared.toggleIsFavorite(model: &self.listData[modelIndex])
             self.refreshTableView()
         })
 

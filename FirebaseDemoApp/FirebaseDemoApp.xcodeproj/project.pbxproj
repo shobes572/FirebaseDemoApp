@@ -23,6 +23,7 @@
 		2F3205B327C019440026DB6F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B227C019440026DB6F /* CardModel.swift */; };
 		2F3205B527C020EF0026DB6F /* MultiCardsViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B427C020EF0026DB6F /* MultiCardsViewController+Utilities.swift */; };
 		2F3205BA27C021D50026DB6F /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205B927C021D50026DB6F /* SingleCardViewController.swift */; };
+		2F3205BD27C029ED0026DB6F /* MultiCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3205BC27C029ED0026DB6F /* MultiCardsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2F3205B227C019440026DB6F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		2F3205B427C020EF0026DB6F /* MultiCardsViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiCardsViewController+Utilities.swift"; sourceTree = "<group>"; };
 		2F3205B927C021D50026DB6F /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
+		2F3205BC27C029ED0026DB6F /* MultiCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCardsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2F32058F27BFEE2C0026DB6F /* MultiCardsView */ = {
 			isa = PBXGroup;
 			children = (
+				2F3205BB27C029CE0026DB6F /* viewModels */,
 				2F3205B027C0192B0026DB6F /* models */,
 				2F32059C27BFFA550026DB6F /* viewControllers */,
 				2F32059B27BFFA4E0026DB6F /* views */,
@@ -225,6 +228,14 @@
 			path = viewControllers;
 			sourceTree = "<group>";
 		};
+		2F3205BB27C029CE0026DB6F /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F3205BC27C029ED0026DB6F /* MultiCardsViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +316,7 @@
 				2F32059A27BFF5ED0026DB6F /* CreateViewController.swift in Sources */,
 				2F3205AF27C0189E0026DB6F /* MultiCardsViewController+Delegate&Datasource.swift in Sources */,
 				2F32057F27BFEDC30026DB6F /* ViewController.swift in Sources */,
+				2F3205BD27C029ED0026DB6F /* MultiCardsViewModel.swift in Sources */,
 				2F3205B527C020EF0026DB6F /* MultiCardsViewController+Utilities.swift in Sources */,
 				2F3205B327C019440026DB6F /* CardModel.swift in Sources */,
 				2F32057B27BFEDC30026DB6F /* AppDelegate.swift in Sources */,
